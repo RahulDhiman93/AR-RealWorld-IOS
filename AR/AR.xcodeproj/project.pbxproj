@@ -12,7 +12,7 @@
 		081469081FC9A4270008B2D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 081469061FC9A4270008B2D8 /* Main.storyboard */; };
 		0814690A1FC9A4270008B2D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 081469091FC9A4270008B2D8 /* Assets.xcassets */; };
 		0814690D1FC9A4270008B2D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0814690B1FC9A4270008B2D8 /* LaunchScreen.storyboard */; };
-		081469151FC9AA4E0008B2D8 /* Models.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 081469141FC9AA4E0008B2D8 /* Models.scnassets */; };
+		0879428F20153DD3009D1A0B /* Models.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 0879428E20153DD3009D1A0B /* Models.scnassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		081469091FC9A4270008B2D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0814690C1FC9A4270008B2D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0814690E1FC9A4270008B2D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		081469141FC9AA4E0008B2D8 /* Models.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; name = Models.scnassets; path = ../../../Downloads/Models.scnassets; sourceTree = "<group>"; };
+		0879428E20153DD3009D1A0B /* Models.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Models.scnassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 				081469041FC9A4270008B2D8 /* ViewController.swift */,
 				081469061FC9A4270008B2D8 /* Main.storyboard */,
 				081469091FC9A4270008B2D8 /* Assets.xcassets */,
-				081469141FC9AA4E0008B2D8 /* Models.scnassets */,
+				0879428E20153DD3009D1A0B /* Models.scnassets */,
 				0814690B1FC9A4270008B2D8 /* LaunchScreen.storyboard */,
 				0814690E1FC9A4270008B2D8 /* Info.plist */,
 			);
@@ -127,8 +127,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0814690D1FC9A4270008B2D8 /* LaunchScreen.storyboard in Resources */,
-				081469151FC9AA4E0008B2D8 /* Models.scnassets in Resources */,
 				0814690A1FC9A4270008B2D8 /* Assets.xcassets in Resources */,
+				0879428F20153DD3009D1A0B /* Models.scnassets in Resources */,
 				081469081FC9A4270008B2D8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

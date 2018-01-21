@@ -27,12 +27,22 @@ class ViewController: UIViewController {
     
     
     @IBAction func addCube(_ sender: Any) {
-        var cubeNode = SCNNode(geometry: SCNBox(width:0.1, height:0.1, length: 0.1, chamferRadius:0 ))
+        var cubeNode = SCNNode(geometry: SCNSphere(radius: 0.08))
         
         let cc = getCameraCord(sceneView: SceneView)
         
+        
+        
         cubeNode.position = SCNVector3(cc.x, cc.y, cc.z)
+        cubeNode.geometry?.firstMaterial?.diffuse.contents = UIImage(named: "diffuse")
+        cubeNode.geometry?.firstMaterial?.specular.contents = UIImage(named: "specular")
+        cubeNode.geometry?.firstMaterial?.emission.contents = UIImage(named: "e")
+        cubeNode.geometry?.firstMaterial?.normal.contents = UIImage(named: "normal")
         SceneView.scene.rootNode.addChildNode(cubeNode)
+        
+          let action = SCNAction.rotate(by: 360*CGFloat((M_PI)/180.0), around: SCNVector3(x:0,y:1,z:0), duration: 8)
+        let repeatAction = SCNAction.repeatForever(action)
+          cubeNode.runAction(repeatAction)
     }
     
     @IBAction func addCup(_ sender: Any) {
@@ -42,7 +52,7 @@ class ViewController: UIViewController {
         
         cupNode.position = SCNVector3(cc.x, cc.y, cc.z)
         
-        guard let VirtualObjectScene = SCNScene(named: "cup.scn", inDirectory: "Models.scnassets")
+        guard let VirtualObjectScene = SCNScene(named: "cup.scn", inDirectory: "Models.scnassets/cup")
             else{
         return
         }
@@ -67,7 +77,7 @@ class ViewController: UIViewController {
         
         candleNode.position = SCNVector3(cc.x, cc.y, cc.z)
         
-        guard let VirtualObjectScene = SCNScene(named: "candle.scn", inDirectory: "Models.scnassets")
+        guard let VirtualObjectScene = SCNScene(named: "candle.scn", inDirectory: "Models.scnassets/candle")
             else{
                 return
         }
@@ -91,7 +101,7 @@ class ViewController: UIViewController {
         
         chairNode.position = SCNVector3(cc.x, cc.y, cc.z)
         
-        guard let VirtualObjectScene = SCNScene(named: "chair.scn", inDirectory: "Models.scnassets")
+        guard let VirtualObjectScene = SCNScene(named: "chair.scn", inDirectory: "Models.scnassets/chair")
             else{
                 return
         }
@@ -114,7 +124,7 @@ class ViewController: UIViewController {
         
         lampNode.position = SCNVector3(cc.x, cc.y, cc.z)
         
-        guard let VirtualObjectScene = SCNScene(named: "lamp.scn", inDirectory: "Models.scnassets")
+        guard let VirtualObjectScene = SCNScene(named: "lamp.scn", inDirectory: "Models.scnassets/lamp")
             else{
                 return
         }
@@ -137,7 +147,7 @@ class ViewController: UIViewController {
         
         vaseNode.position = SCNVector3(cc.x, cc.y, cc.z)
         
-        guard let VirtualObjectScene = SCNScene(named: "cup.scn", inDirectory: "Models.scnassets")
+        guard let VirtualObjectScene = SCNScene(named: "vase.scn", inDirectory: "Models.scnassets/vase")
             else{
                 return
         }
